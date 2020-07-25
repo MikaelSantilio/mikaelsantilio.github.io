@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Mikael Santilio | Desenvolvedor Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/boot.css">
@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body >
     <div class="body_container" >
         <!-- START HEADER -->
         <header class="main_header" >
             <div class="main_header_container" >
-                <nav class="" >
+                <nav class="main_header_container_nav" id="main_header_container_nav" >
                     <div class="main_header_container_nav_logo" >
                         <a href="https://mikaelsantilio.github.io">
                             <img src="img/mikaelsantilio.svg" 
@@ -49,19 +49,23 @@
             <div class="main_container" >
                 <!-- HOME SECTION START -->
                 <section class="home_section" >
-                    <header>
-                        <h5>Olá meu nome é</h5>
-                        <h1>Mikael Santilio</h1>
-                        <span>Desenvolvedor de Sistemas Web</span>
-                        <div class="social_icons">
-                            <a class="icon" href="#"> <i class="icon-github" ></i> </a>
-                            <a class="icon" href="#"> <i class="icon-linkedin" ></i> </a>
-                            <a class="icon" href="#"> <i class="icon-whatsapp" ></i> </a>
-                            <a class="icon" href="#"> <i class="icon-instagram" ></i> </a>
+                    <div class="container" >
+                        <div class="container_header_home" >
+                            <header>
+                                <h5>Olá meu nome é</h5>
+                                <h1>Mikael Santilio</h1>
+                                <span>Desenvolvedor de Sistemas Web</span>
+                                <div class="social_icons">
+                                    <a class="icon" href="#"> <i class="icon-github" ></i> </a>
+                                    <a class="icon" href="#"> <i class="icon-linkedin" ></i> </a>
+                                    <a class="icon" href="#"> <i class="icon-whatsapp" ></i> </a>
+                                    <a class="icon" href="#"> <i class="icon-instagram" ></i> </a>
+                                </div>
+                                
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>    
+                            </header>
                         </div>
-                        
-                        <a href="#" class="btn btn-primary">Saiba Mais</a>
-                    </header>
+                    </div >
                 </section>
                 <!-- HOME SECTION END -->
 
@@ -71,17 +75,22 @@
                         <h1 class="section_title" >Sobre Mim</h1>
                     </header>
                     <article>
-                        <header>
-                            <img src="img/profile-photo.png" alt="">
-                            <h2>Desenvolvedor Web</h2>
-                            <span>Graduando em Análise e Desenvolvimento de Sistemas</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Accusamus culpa repudiandae vitae blanditiis iure cum corrupti? 
-                                Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
-                                Tempore, dolores adipisci.</p>
-                        </header>
-                        
-                        <a href="#" class="btn btn-primary" >Download CV</a>
+                        <div class="container" >
+                            <div class="container_img_profile" >
+                                <img src="img/profile-photo.png" alt="">
+                            </div >
+                            <div class="container_description_profile" >
+                                <header>
+                                    <h2>Desenvolvedor Web</h2>
+                                    <h3>Graduando em Análise e Desenvolvimento de Sistemas</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Accusamus culpa repudiandae vitae blanditiis iure cum corrupti? 
+                                        Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
+                                        Tempore, dolores adipisci.</p>
+                                        <a href="#" class="btn btn-primary" >Download CV</a>
+                                </header>
+                            </div >
+                        </div >
                     </article>
                 </section>
                 <!-- SOBRE MIM SECTION END -->
@@ -91,74 +100,83 @@
                     <header>
                         <h1 class="section_title" >Projetos</h1>
                     </header>
-                    <article>
-                        <div class="projects_section_card radius" >
-                            <div class="thumbnail radius-top" >
-                                <img
-                                class="radius-top"
-                                src="img/thumbnail.png"
-                                alt="Atlassian | Sistema administrativo"
-                                title="Atlassian | Sistema administrativo">
-                            </div>
-                            <div class="card_body" >
-                                <h2>Sistema administrativo</h2>
-                                <span>Atlassian</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div >
-                            <div class="actions" >
-                                <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                            </div >
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <div class="projects_section_card radius" >
-                            <div class="thumbnail radius-top" >
-                                <img
-                                class="radius-top"
-                                src="img/thumbnail.png"
-                                alt="Atlassian | Sistema administrativo"
-                                title="Atlassian | Sistema administrativo">
-                            </div>
-                            <div class="card_body" >
-                                <h2>Sistema administrativo</h2>
-                                <span>Atlassian</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div >
-                            <div class="actions" >
-                                <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                            </div >
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <div class="projects_section_card radius" >
-                            <div class="thumbnail radius-top" >
-                                <img
-                                class="radius-top"
-                                src="img/thumbnail.png"
-                                alt="Atlassian | Sistema administrativo"
-                                title="Atlassian | Sistema administrativo">
-                            </div>
-                            <div class="card_body" >
-                                <h2>Sistema administrativo</h2>
-                                <span>Atlassian</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div >
-                            <div class="actions" >
-                                <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                            </div >
-                        </div>
-                    </article>
+                    <div class="container" >
+                        <div class="container_project_article" >
+                            <article>
+                                <div class="projects_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/thumbnail.png"
+                                        alt="Atlassian | Sistema administrativo"
+                                        title="Atlassian | Sistema administrativo">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>Sistema administrativo</h2>
+                                        <span>Atlassian</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div >
+                                    <div class="actions" >
+                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+    
+                        <div class="container_project_article" >
+                            <article>
+                                <div class="projects_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/thumbnail.png"
+                                        alt="Atlassian | Sistema administrativo"
+                                        title="Atlassian | Sistema administrativo">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>Sistema administrativo</h2>
+                                        <span>Atlassian</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div >
+                                    <div class="actions" >
+                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+                        
+                        <div class="container_project_article" >
+                            <article>
+                                <div class="projects_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/thumbnail.png"
+                                        alt="Atlassian | Sistema administrativo"
+                                        title="Atlassian | Sistema administrativo">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>Sistema administrativo</h2>
+                                        <span>Atlassian</span>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div >
+                                    <div class="actions" >
+                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+                    </div >
+                        
                 </section>
                 <!-- PROJETOS SECTION END -->
                     
@@ -167,50 +185,58 @@
                     <header>
                         <h1 class="section_title" >Serviços</h1>
                     </header>
-                    <article>
-                        <div class="services_section_card radius" >
-                            <div class="service_icon" >
-                                <img src="img/cog.png" alt="">
-                            </div>
-                            <div class="card_body" >
-                                <h2>Sistemas</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                    <div class="container" >
+                        <div class="container_service_article" >
+                            <article>
+                                <div class="services_section_card radius" >
+                                    <div class="service_icon" >
+                                        <img src="img/cog.png" alt="">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>Sistemas</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div >
 
-                    <article>
-                        <div class="services_section_card radius" >
-                            <div class="service_icon" >
-                                <img src="img/rocket.png" alt="">
-                            </div>
-                            <div class="card_body" >
-                                <h2>SEO</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                        <div class="container_service_article" >
+                            <article>
+                                <div class="services_section_card radius" >
+                                    <div class="service_icon" >
+                                        <img src="img/rocket.png" alt="">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>SEO</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div >
 
-                    <article>
-                        <div class="services_section_card radius" >
-                            <div class="service_icon" >
-                                <img src="img/megaphone.png" alt="">
-                            </div>
-                            <div class="card_body" >
-                                <h2>Marketing Digital</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Earum quaerat saepe amet nam non in corporis at architecto
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                        <div class="container_service_article" >
+                            <article>
+                                <div class="services_section_card radius" >
+                                    <div class="service_icon" >
+                                        <img src="img/megaphone.png" alt="">
+                                    </div>
+                                    <div class="card_body" >
+                                        <h2>Marketing Digital</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Earum quaerat saepe amet nam non in corporis at architecto
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div >
+                    </div >
                 </section>
                 <!-- SERVICOS SECTION END -->
                     
@@ -219,49 +245,82 @@
                     <header>
                         <h1 class="section_title" >Blog</h1>
                     </header>
-                    <article>
-                        <div class="blog_section_card radius" >
-                            <div class="thumbnail radius-top" >
-                                <img
-                                class="radius-top"
-                                src="img/django.png"
-                                alt="Django Rest Framework"
-                                title="Django Rest Framework">
-                            </div>
-                            <div class="card_body" >
-                                <span>July 24, 2020</span>
-                                <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-            
-                            </div >
-                            <div class="tags" >
-                                <span class="badge badge-primary">django</span>
-                                <span class="badge badge-primary">rest</span>
-                                <span class="badge badge-primary">api</span>
-                            </div >
-                        </div>
-                    </article>
+                    <div class="container" >
+                        <div class="container_blog_article" >
+                            <article>
+                                <div class="blog_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/django.png"
+                                        alt="Django Rest Framework"
+                                        title="Django Rest Framework">
+                                    </div>
+                                    <div class="card_body" >
+                                        <span>July 24, 2020</span>
+                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
+                    
+                                    </div >
+                                    <div class="tags" >
+                                        <span class="badge badge-primary">django</span>
+                                        <span class="badge badge-primary">rest</span>
+                                        <span class="badge badge-primary">api</span>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
 
-                    <article>
-                        <div class="blog_section_card radius" >
-                            <div class="thumbnail radius-top" >
-                                <img
-                                class="radius-top"
-                                src="img/django.png"
-                                alt="Django Rest Framework"
-                                title="Django Rest Framework">
-                            </div>
-                            <div class="card_body" >
-                                <span>July 24, 2020</span>
-                                <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-            
-                            </div >
-                            <div class="tags" >
-                                <span class="badge badge-primary">django</span>
-                                <span class="badge badge-primary">rest</span>
-                                <span class="badge badge-primary">api</span>
-                            </div >
-                        </div>
-                    </article>
+                        <div class="container_blog_article" >
+                            <article>
+                                <div class="blog_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/django.png"
+                                        alt="Django Rest Framework"
+                                        title="Django Rest Framework">
+                                    </div>
+                                    <div class="card_body" >
+                                        <span>July 24, 2020</span>
+                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
+                    
+                                    </div >
+                                    <div class="tags" >
+                                        <span class="badge badge-primary">django</span>
+                                        <span class="badge badge-primary">rest</span>
+                                        <span class="badge badge-primary">api</span>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+
+                        <div class="container_blog_article" >
+                            <article>
+                                <div class="blog_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/django.png"
+                                        alt="Django Rest Framework"
+                                        title="Django Rest Framework">
+                                    </div>
+                                    <div class="card_body" >
+                                        <span>July 24, 2020</span>
+                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
+                    
+                                    </div >
+                                    <div class="tags" >
+                                        <span class="badge badge-primary">django</span>
+                                        <span class="badge badge-primary">rest</span>
+                                        <span class="badge badge-primary">api</span>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+                    </div >
+                    
+
+                    
                 </section>
                 <!-- BLOG SECTION END -->
                     
@@ -270,21 +329,30 @@
                     <header>
                         <h1 class="section_title" >Contato</h1>
                     </header>
-                    <article>
-                        <header>
-                            <h2>I love to hear from you or have a project on mind lets talk.</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
-                                tristique ultrices malesuada. Praesent rhoncus justo sapien, 
-                                porta vulputate augue tempus a. Vestibulum gravida dolor justo. 
-                                Donec commodo orci in purus feugiat, sed varius sapien tristique.</p>
-                        </header>
-                    </article>
-                    <form action="" method="post" autocomplete="off">
-                        <input type="text" name="name" id="input_name" placeholder="Nome">
-                        <input type="email" name="email" id="input_email" placeholder="Email">
-                        <textarea name="message" id="textarea_message" placeholder="Mensagem" rows="8"></textarea>
-                    </form>
+                    <div class="container" >
+                        <div class="container_contact_article" >
+                            <article>
+                                <header>
+                                    <h2>I love to hear from you or have a project on mind lets talk.</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+                                        tristique ultrices malesuada. Praesent rhoncus justo sapien, 
+                                        porta vulputate augue tempus a. Vestibulum gravida dolor justo. 
+                                        Donec commodo orci in purus feugiat, sed varius sapien tristique.</p>
+                                </header>
+                            </article>
+                        </div >
+                        <div class="container_contact_form" >
+                            <form action="" method="post" autocomplete="off">
+                                <input type="text" name="name" id="input_name" placeholder="Nome">
+                                <input type="email" name="email" id="input_email" placeholder="Email">
+                                <textarea name="message" id="textarea_message" placeholder="Mensagem" rows="8"></textarea>
+                                <button id="btn_enviar" class="btn btn-primary" type="submit">Enviar</button>
+                            </form>
+                        </div >
+                    </div >
+                    
+                    
                 </section>
                 <!-- CONTATO SECTION END -->
             </div >
@@ -309,5 +377,6 @@
         </footer>
     </div >
     <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

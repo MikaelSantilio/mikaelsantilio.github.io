@@ -41,3 +41,4 @@ btn_open.addEventListener('click', function(e){
 btn_close.addEventListener('click', function(e){
     fadeOut(el);
 });
+
