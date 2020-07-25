@@ -42,3 +42,24 @@ btn_close.addEventListener('click', function(e){
     fadeOut(el);
 });
 
+document.querySelectorAll('.menu_option').forEach(option => {
+    option.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        if (el.style.display == "block") {
+            fadeOut(el);    
+        }
+        
+    });
+});
+
+document.querySelectorAll('.menu_option').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
