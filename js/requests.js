@@ -1,18 +1,7 @@
-const url_services = 'http://127.0.0.1:8000/services/';
-const url_projects = 'http://127.0.0.1:8000/projects/';
+import { url_services, url_projects, getRequest } from './utils.js';
 
-const getData = async url => {
-    try {
-      const response = await fetch(url);
-      const json = await response.json();
-      return json;
-    } catch (error) {
-        return error;
-    }
-};
-
-var projects = getData(url_projects);
-var services = getData(url_services);
+var projects = getRequest(url_projects);
+var services = getRequest(url_services);
 
 projects.then(results => {
 

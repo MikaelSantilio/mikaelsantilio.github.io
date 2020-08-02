@@ -118,7 +118,14 @@ small {
 .text-muted {
     color: #6c757d!important;
 }
-.form-text {
+/* .form-text {
+    position: absolute;
+    display: inline-block;
+    margin-top: .25em;
+    margin-left: .25em;
+} */
+
+.show-helper {
     display: inline-block;
     margin-top: .25em;
     margin-left: .25em;

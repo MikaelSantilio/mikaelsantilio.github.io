@@ -256,18 +256,18 @@
                         <div class="container_contact_form" >
                             <form autocomplete="off" onsubmit="return sendEmail(this)">
                                 <div class="input-group" >
-                                    <input class="form-error" type="text" name="name" id="input_name" placeholder="Nome">
-                                    <small id="input_name_helper" class="msg-error form-text" >Este campo é obrigatório.</small>
+                                    <input class="" type="text" name="name" id="input_name" placeholder="Nome">
+                                    <small id="input_name_helper" class="msg-error form-text" ></small>
                                 </div >
 
                                 <div class="input-group" >
-                                    <input class="form-success" type="email" name="email" id="input_email" placeholder="Email">
-                                    <small id="input_email_helper" class="msg-error form-text" >Este campo é obrigatório.</small>
+                                    <input class="" type="email" name="email" id="input_email" placeholder="Email">
+                                    <small id="input_email_helper" class="msg-error form-text" ></small>
                                 </div >
 
                                 <div class="input-group" >
                                     <textarea name="message" id="textarea_message" placeholder="Mensagem" rows="8"></textarea>
-                                    <small id="input_message_helper" class="msg-error form-text" >Este campo é obrigatório.</small>
+                                    <small id="input_message_helper" class="msg-error form-text" ></small>
                                 </div >
                                 <button id="btn_enviar" class="btn btn-primary" type="submit">Enviar</button>
                             </form>
@@ -298,8 +298,9 @@
         </footer>
     </div >
     <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
-    <script src="js/send_email.js"></script>
-    <script src="js/requests.js"></script>
+    <!-- <script type="module" src="js/utils.js"></script> -->
+    <script type="module" src="js/send_email.js"></script>
+    <script type="module" src="js/requests.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scroll.js"></script>
 </body>
