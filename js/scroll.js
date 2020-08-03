@@ -9,5 +9,3 @@ window.onscroll = function() {
         header.classList.remove('nav_active');
     }
 }
-
-fetch
