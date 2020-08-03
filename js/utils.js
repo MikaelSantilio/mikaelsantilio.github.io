@@ -29,10 +29,14 @@ export const postRequest = async (url, body) => {
     }
 };
 
-function validateName() {
-  console.log('#####');
-  var input = document.getElementById('input_name_helper');
-  // input.style.display = 'block';
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    // alert("You have entered an invalid email address!")
+    return (false)
 }
 
 document.getElementById('input_name').addEventListener('blur', () => {
@@ -54,7 +58,7 @@ document.getElementById('input_email').addEventListener('blur', () => {
   var helper = document.getElementById('input_email_helper');
   var input = document.getElementById('input_email');
 
-  if (input.value == '') {
+  if (input.value == '' || !ValidateEmail(input.value)) {
     input.classList.add('form-error');
     helper.classList.remove('d-none');
   } else {
