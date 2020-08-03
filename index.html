@@ -257,17 +257,17 @@
                             <form autocomplete="off" onsubmit="return sendEmail(this)">
                                 <div class="input-group" >
                                     <input class="" type="text" name="name" id="input_name" placeholder="Nome">
-                                    <small id="input_name_helper" class="msg-error form-text" ></small>
+                                    <small id="input_name_helper" class="msg-error form-text d-none" >Este campo é obrigatório.</small>
                                 </div >
 
                                 <div class="input-group" >
                                     <input class="" type="email" name="email" id="input_email" placeholder="Email">
-                                    <small id="input_email_helper" class="msg-error form-text" ></small>
+                                    <small id="input_email_helper" class="msg-error form-text d-none" >Insira um endereço de email válido.</small>
                                 </div >
 
                                 <div class="input-group" >
                                     <textarea name="message" id="textarea_message" placeholder="Mensagem" rows="8"></textarea>
-                                    <small id="input_message_helper" class="msg-error form-text" ></small>
+                                    <small id="input_message_helper" class="msg-error form-text d-none" >Este campo é obrigatório.</small>
                                 </div >
                                 <button id="btn_enviar" class="btn btn-primary" type="submit">Enviar</button>
                             </form>

@@ -28,3 +28,52 @@ export const postRequest = async (url, body) => {
         return error;
     }
 };
+
+function validateName() {
+  console.log('#####');
+  var input = document.getElementById('input_name_helper');
+  // input.style.display = 'block';
+}
+
+document.getElementById('input_name').addEventListener('blur', () => {
+  var helper = document.getElementById('input_name_helper');
+  var input = document.getElementById('input_name');
+
+  if (input.value == '') {
+    input.classList.add('form-error');
+    helper.classList.remove('d-none');
+  } else {
+    input.classList.remove('form-error');
+    helper.classList.add('d-none');
+  }
+
+});
+
+
+document.getElementById('input_email').addEventListener('blur', () => {
+  var helper = document.getElementById('input_email_helper');
+  var input = document.getElementById('input_email');
+
+  if (input.value == '') {
+    input.classList.add('form-error');
+    helper.classList.remove('d-none');
+  } else {
+    input.classList.remove('form-error');
+    helper.classList.add('d-none');
+  }
+
+});
+
+document.getElementById('textarea_message').addEventListener('blur', () => {
+  var helper = document.getElementById('input_message_helper');
+  var input = document.getElementById('textarea_message');
+
+  if (input.value == '') {
+    input.classList.add('form-error');
+    helper.classList.remove('d-none');
+  } else {
+    input.classList.remove('form-error');
+    helper.classList.add('d-none');
+  }
+
+});

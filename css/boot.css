@@ -39,6 +39,7 @@ button {
     font-size: 0.875em;
     text-transform: uppercase;
     border-radius: 5px;
+    outline: none;
 }
 
 .btn-primary {
@@ -90,24 +91,19 @@ button {
 ------------------------------------------ */
 
 .form-error {
-    background-image: url('../img/form-error.svg');
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-    background-size: 2.5%;
     border:1px solid #e74c3c !important;
+    /* transition: 1.1s; */
 }
 
 .form-success {
-    background-image: url('../img/form-success.svg');
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-    background-size: 2.5%;
     border:1px solid #2ecc71 !important;
+    /* transition: 1.1s; */
 }
 
 small {
     font-size: 12px ;
     font-weight: 400;
+    /* transition: 1.1s; */
     /* position: absolute; */
 }
 
