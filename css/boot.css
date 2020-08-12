@@ -20,6 +20,16 @@
     color: var(--main-color);
 }
 
+/* BUTTONS
+------------------------------------------ */
+button {
+	font-size: 100%;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	box-shadow: none;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -29,6 +39,8 @@
     font-size: 0.875em;
     text-transform: uppercase;
     border-radius: 5px;
+    outline: none;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -62,6 +74,8 @@
     border-radius: 5px 5px 0 0;
 }
 
+/* BADGE
+------------------------------------------ */
 .badge {
     display: inline-block;
     font-size: 12px;
@@ -72,10 +86,94 @@
     line-height: 1;
     text-align: center;
     vertical-align: baseline;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* FORM
+------------------------------------------ */
+
+.form-error {
+    border:1px solid #e74c3c !important;
+    /* transition: 1.1s; */
+}
+
+.form-success {
+    border:1px solid #2ecc71 !important;
+    /* transition: 1.1s; */
+}
+
+small {
+    font-size: 12px ;
+    font-weight: 400;
+    /* transition: 1.1s; */
+    /* position: absolute; */
+}
+
+.msg-error {
+    color: #e74c3c !important;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+/* .form-text {
+    position: absolute;
+    display: inline-block;
+    margin-top: .25em;
+    margin-left: .25em;
+} */
+
+.show-helper {
+    display: inline-block;
+    margin-top: .25em;
+    margin-left: .25em;
 }
 
 .badge-primary {
     color: var(--white-color);
     background-color: var(--main-color);
 }
+
+.spinner {
+    /* margin: 100px auto 0; */
+    width: 70px;
+    text-align: center;
+}
+.d-none {
+    display: none;
+}
+  
+  .spinner > div {
+    width: 10px;
+    height: 10px;
+    background-color:var(--white-color);
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }

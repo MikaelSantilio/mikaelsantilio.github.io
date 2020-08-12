@@ -1,33 +1,4 @@
-// fade out
-function fadeOut(el){
-    el.style.opacity = 1;
-    
-    (function fade() {
-        if ((el.style.opacity -= .1) < 0) {
-            el.style.display = 'none';
-            el.classList.add('is-hidden');
-        } else {
-            requestAnimationFrame(fade);
-        }
-    })();
-}
-
-// fade in
-function fadeIn(el, display){
-    if (el.classList.contains('is-hidden')){
-        el.classList.remove('is-hidden');
-    }
-    el.style.opacity = 0;
-    el.style.display = display || "block";
-    
-    (function fade() {
-        var val = parseFloat(el.style.opacity);
-        if (!((val += .1) > 1)) {
-            el.style.opacity = val;
-            requestAnimationFrame(fade);
-        }
-    })();
-}
+import { fadeIn, fadeOut } from './utils.js';
 
 var btn_open = document.querySelector('.btn_menu');
 var btn_close = document.querySelector('.btn_close');
@@ -42,6 +13,7 @@ btn_close.addEventListener('click', function(e){
     fadeOut(el);
 });
 
+// Close Responsive Menu On Link Click
 document.querySelectorAll('.menu_option').forEach(option => {
     option.addEventListener('click', function (e) {
         e.preventDefault();
@@ -52,7 +24,7 @@ document.querySelectorAll('.menu_option').forEach(option => {
         
     });
 });
-
+// Smooth Scroll on click
 document.querySelectorAll('.menu_option').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -62,4 +34,17 @@ document.querySelectorAll('.menu_option').forEach(anchor => {
         });
     });
 });
+
+// Shadow navbar on scroll
+var header = document.getElementById('main_header_container_nav');
+
+window.onscroll = function() {
+    var top = window.scrollY;
+
+    if (top >= 50) {
+        header.classList.add('nav_active');
+    } else {
+        header.classList.remove('nav_active');
+    }
+}
 

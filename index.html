@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/boot.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,29 +16,30 @@
         <header class="main_header" >
             <div class="main_header_container" >
                 <nav class="main_header_container_nav" id="main_header_container_nav" >
-                    <div class="main_header_container_nav_logo" >
-                        <a href="https://mikaelsantilio.github.io">
-                            <img src="img/mikaelsantilio.svg" 
-                            alt="Mikael Santilio | Desenvolvedor Web"
-                            title="Mikael Santilio | Desenvolvedor Web">
-                        </a>
-                    </div >
-                    <a href="#" class="icon icon-bars btn_menu" >
-                        <!-- <img class="fill" src="img/bars-menu.svg" alt=""> -->
-                    </a>
-                    <div class="main_header_container_nav_menu is_hidden" id="nav_menu" >
-                        <a href="#" class="icon btn_close" >
-                            <i class="icon-close"></i>
-                        </a>
-                        <ul>
-                            <li><a class="menu_option" href="#section_home">Home</a></li>
-                            <li><a class="menu_option" href="#section_about">Sobre Mim</a></li>
-                            <li><a class="menu_option" href="#section_projects">Projetos</a></li>
-                            <li><a class="menu_option" href="#section_services">Serviços</a></li>
-                            <li><a class="menu_option" href="#section_blog">Blog</a></li>
-                            <li><a class="menu_option" href="#section_contact">Contato</a></li>
-                        </ul>
+                    <div class="main_header_container_nav_grid" >
+                        <div class="main_header_container_nav_logo" >
+                            <a href="https://mikaelsantilio.github.io">
+                                <img src="img/mikaelsantilio.svg" 
+                                alt="Mikael Santilio | Desenvolvedor Web"
+                                title="Mikael Santilio | Desenvolvedor Web">
+                            </a>
+                        </div >
+                        <a href="#" class="icon icon-bars btn_menu" ></a>
+                        <div class="main_header_container_nav_menu is_hidden" id="nav_menu" >
+                            <a href="#" class="icon btn_close" >
+                                <i class="icon-close"></i>
+                            </a>
+                            <ul>
+                                <li><a class="menu_option" href="#section_home">Home</a></li>
+                                <li><a class="menu_option" href="#section_about">Sobre Mim</a></li>
+                                <li><a class="menu_option" href="#section_projects">Projetos</a></li>
+                                <li><a class="menu_option" href="#section_services">Serviços</a></li>
+                                <li><a class="menu_option" href="#section_blog">Blog</a></li>
+                                <li><a class="menu_option" href="#section_contact">Contato</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    
                 </nav>
             </div >
         </header>
@@ -55,14 +55,17 @@
                                 <h5>Olá meu nome é</h5>
                                 <h1>Mikael Santilio</h1>
                                 <span>Desenvolvedor de Sistemas Web</span>
-                                <div class="social_icons">
-                                    <a class="icon" href="https://github.com/MikaelSantilio"> <i class="icon-github" ></i> </a>
-                                    <a class="icon" href="https://www.linkedin.com/in/mikaelsantilio/"> <i class="icon-linkedin" ></i> </a>
-                                    <a class="icon" href="https://wa.me/5586999454360"> <i class="icon-whatsapp" ></i> </a>
-                                    <a class="icon" href="https://www.instagram.com/mikael.santilio/"> <i class="icon-instagram" ></i> </a>
-                                </div>
+                                <div class="container_header_home_cta" >
+                                    <div class="social_icons">
+                                        <a class="icon" href="https://github.com/MikaelSantilio"> <i class="icon-github" ></i> </a>
+                                        <a class="icon" href="https://www.linkedin.com/in/mikaelsantilio/"> <i class="icon-linkedin" ></i> </a>
+                                        <a class="icon" href="https://wa.me/5586999454360"> <i class="icon-whatsapp" ></i> </a>
+                                        <a class="icon" href="https://www.instagram.com/mikael.santilio/"> <i class="icon-instagram" ></i> </a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                </div >
                                 
-                                <a href="#" class="btn btn-primary">Saiba Mais</a>    
                             </header>
                         </div>
                         <div class="container_home_illustration" >
@@ -107,80 +110,7 @@
                         <h1 class="section_title" >Projetos</h1>
                     </header>
                     <div class="container" >
-                        <div class="container_project_article" >
-                            <article>
-                                <div class="projects_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/thumbnail.png"
-                                        alt="Atlassian | Sistema administrativo"
-                                        title="Atlassian | Sistema administrativo">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>Sistema administrativo</h2>
-                                        <span>Atlassian</span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div >
-                                    <div class="actions" >
-                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_project_article" >
-                            <article>
-                                <div class="projects_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/thumbnail.png"
-                                        alt="Atlassian | Sistema administrativo"
-                                        title="Atlassian | Sistema administrativo">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>Sistema administrativo</h2>
-                                        <span>Atlassian</span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div >
-                                    <div class="actions" >
-                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
                         
-                        <div class="container_project_article" >
-                            <article>
-                                <div class="projects_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/thumbnail.png"
-                                        alt="Atlassian | Sistema administrativo"
-                                        title="Atlassian | Sistema administrativo">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>Sistema administrativo</h2>
-                                        <span>Atlassian</span>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div >
-                                    <div class="actions" >
-                                        <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
                     </div >
                         
                 </section>
@@ -192,167 +122,10 @@
                         <h1 class="section_title" >Serviços</h1>
                     </header>
                     <div class="container" >
-                        <div class="container_service_article" >
-                            <article>
-                                <div class="services_section_card radius" >
-                                    <div class="service_icon" >
-                                        <img src="img/cog.png" alt="">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>Sistemas</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_service_article" >
-                            <article>
-                                <div class="services_section_card radius" >
-                                    <div class="service_icon" >
-                                        <img src="img/rocket.png" alt="">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>SEO</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_service_article" >
-                            <article>
-                                <div class="services_section_card radius" >
-                                    <div class="service_icon" >
-                                        <img src="img/megaphone.png" alt="">
-                                    </div>
-                                    <div class="card_body" >
-                                        <h2>Marketing Digital</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Earum quaerat saepe amet nam non in corporis at architecto
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div >
+                        
                     </div >
                 </section>
                 <!-- SERVICOS SECTION END -->
-                    
-                <!-- BLOG SECTION START -->
-                <section class="blog_section" id="section_blog">
-                    <header>
-                        <h1 class="section_title" >Blog</h1>
-                    </header>
-                    <div class="container" >
-                        <div class="container_blog_article" >
-                            <article>
-                                <div class="blog_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/django.png"
-                                        alt="Django Rest Framework"
-                                        title="Django Rest Framework">
-                                    </div>
-                                    <div class="card_body" >
-                                        <span>July 24, 2020</span>
-                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-                    
-                                    </div >
-                                    <div class="tags" >
-                                        <span class="badge badge-primary">django</span>
-                                        <span class="badge badge-primary">rest</span>
-                                        <span class="badge badge-primary">api</span>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_blog_article" >
-                            <article>
-                                <div class="blog_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/django.png"
-                                        alt="Django Rest Framework"
-                                        title="Django Rest Framework">
-                                    </div>
-                                    <div class="card_body" >
-                                        <span>July 24, 2020</span>
-                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-                    
-                                    </div >
-                                    <div class="tags" >
-                                        <span class="badge badge-primary">django</span>
-                                        <span class="badge badge-primary">rest</span>
-                                        <span class="badge badge-primary">api</span>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_blog_article" >
-                            <article>
-                                <div class="blog_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/django.png"
-                                        alt="Django Rest Framework"
-                                        title="Django Rest Framework">
-                                    </div>
-                                    <div class="card_body" >
-                                        <span>July 24, 2020</span>
-                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-                    
-                                    </div >
-                                    <div class="tags" >
-                                        <span class="badge badge-primary">django</span>
-                                        <span class="badge badge-primary">rest</span>
-                                        <span class="badge badge-primary">api</span>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
-
-                        <div class="container_blog_article" >
-                            <article>
-                                <div class="blog_section_card radius" >
-                                    <div class="thumbnail radius-top" >
-                                        <img
-                                        class="radius-top"
-                                        src="img/django.png"
-                                        alt="Django Rest Framework"
-                                        title="Django Rest Framework">
-                                    </div>
-                                    <div class="card_body" >
-                                        <span>July 24, 2020</span>
-                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
-                    
-                                    </div >
-                                    <div class="tags" >
-                                        <span class="badge badge-primary">django</span>
-                                        <span class="badge badge-primary">rest</span>
-                                        <span class="badge badge-primary">api</span>
-                                    </div >
-                                </div>
-                            </article>
-                        </div >
-                    </div >
-                    
-
-                    
-                </section>
-                <!-- BLOG SECTION END -->
                     
                 <!-- CONTATO SECTION START -->
                 <section class="contact_section" id="section_contact" >
@@ -363,23 +136,23 @@
                         <div class="container_contact_article" >
                             <article>
                                 <header>
-                                    <h2>I love to hear from you or have a project on mind lets talk.</h2>
+                                    <h2>Vamos trocar uma ideia. Ficarei feliz em te responder. 😉</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
-                                        tristique ultrices malesuada. Praesent rhoncus justo sapien, 
-                                        porta vulputate augue tempus a. Vestibulum gravida dolor justo. 
-                                        Donec commodo orci in purus feugiat, sed varius sapien tristique.</p>
+                                        Mande uma mensagem em dos seguintes meios e entrarei em contato dentro 
+                                        de um dia útil.
+                                    </p>
+                                    <div class="container_contact_article_link" >
+                                        <a class="btn btn-link" href="https://wa.me/5586999454360">Whatsapp - (86)99945-4360</a>
+                                        <br>
+                                        <a class="btn btn-link" href="https://www.linkedin.com/in/mikaelsantilio/">Linkedin - @mikaelsantilio</a>
+                                        <br>
+                                        <a class="btn btn-link" href="mailto:mikael.santilio@gmail.com">mikael.santilio@gmail.com</a>
+                                        <br>
+                                    </div>
                                 </header>
                             </article>
                         </div >
-                        <div class="container_contact_form" >
-                            <form action="" method="post" autocomplete="off">
-                                <input type="text" name="name" id="input_name" placeholder="Nome">
-                                <input type="email" name="email" id="input_email" placeholder="Email">
-                                <textarea name="message" id="textarea_message" placeholder="Mensagem" rows="8"></textarea>
-                                <button id="btn_enviar" class="btn btn-primary" type="submit">Enviar</button>
-                            </form>
-                        </div >
+                        
                     </div >
                     
                     
@@ -405,7 +178,7 @@
             </div>
         </footer>
     </div >
-    <script src="js/script.js"></script>
-    <script src="js/scroll.js"></script>
+    <script type="module" src="js/requests.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
