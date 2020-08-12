@@ -35,3 +35,16 @@ document.querySelectorAll('.menu_option').forEach(anchor => {
     });
 });
 
+// Shadow navbar on scroll
+var header = document.getElementById('main_header_container_nav');
+
+window.onscroll = function() {
+    var top = window.scrollY;
+
+    if (top >= 50) {
+        header.classList.add('nav_active');
+    } else {
+        header.classList.remove('nav_active');
+    }
+}
+
