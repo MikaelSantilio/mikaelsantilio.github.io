@@ -446,7 +446,7 @@ html, body {
 }
 
 .container_contact_article_link a:first-child {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin-top: 10px;
 }
 
@@ -522,6 +522,9 @@ html, body {
         margin-top: 4px;
         font-size: 1em;
         font-weight: 300;
+    }
+    .container_contact_article_link a:first-child {
+        font-size: 1.6em;
     }
 }
 
